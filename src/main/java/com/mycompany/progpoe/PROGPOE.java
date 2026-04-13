@@ -78,7 +78,7 @@ public class PROGPOE {
         sc.close();
     }
 
-    // username check (simple way)
+    // username check 
     public static boolean checkUsername(String user) {
         if (user.contains("_") && user.length() <= 5) {
             return true;
@@ -87,7 +87,7 @@ public class PROGPOE {
         }
     }
 
-    // password check (not fancy)
+    // password check 
     public static boolean checkPassword(String pass) {
 
         boolean cap = false;
@@ -117,7 +117,7 @@ public class PROGPOE {
         }
     }
 
-    // phone (still regex because assignment wants it)
+    // phone 
     public static boolean checkPhone(String phone) {
         return phone.matches("^\\+27\\d{9}$");
     }
